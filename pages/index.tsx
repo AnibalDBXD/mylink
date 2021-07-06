@@ -2,9 +2,8 @@ import React from "react";
 import { Box, Flex, Heading, VStack, Text } from '@chakra-ui/react';
 import LoginButton, { LoginData } from "../components/LoginButton";
 
-const Home = (): JSX.Element => {
-  return (
-    <Flex alignItems="center"
+const Home = (): JSX.Element => (
+  <Flex alignItems="center"
       flexDirection="column"
       height="100vh"
       padding="8">
@@ -28,7 +27,6 @@ const Home = (): JSX.Element => {
           </VStack>
       </Box>
     </Flex>
-  );
-};
+);
 
 export default Home;
