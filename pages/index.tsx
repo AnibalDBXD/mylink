@@ -1,21 +1,32 @@
 import React from "react";
-import { Flex, Heading } from '@chakra-ui/react';
-import ToggleColor from "../components/ToggleColor";
+import { Box, Flex, Heading, VStack, Text } from '@chakra-ui/react';
+import LoginButton, { LoginData } from "../components/LoginButton";
 
 const Home = (): JSX.Element => {
   return (
-    <Flex
-      alignItems="center"
+    <Flex alignItems="center"
       flexDirection="column"
       height="100vh"
-      justifyContent="center"
-      minHeight="100vh"
-      padding="0 0.5rem"
-    >
+      padding="8">
       <Heading>
-        Hola
+        Welcome to MyLink
       </Heading>
-      <ToggleColor />
+      <Text>
+        All your links on the same page
+      </Text>
+      <Box marginTop="10vh">
+        <Text fontSize="1.2rem">Login with:</Text>
+        <VStack
+          gridGap="1.2rem"
+          marginTop="2.5rem">
+        {LoginData.map(({ handleLogin, icon, onDark, id }) => (
+          <LoginButton handleLogin={handleLogin}
+            icon={icon}
+            key={id}
+            onDark={onDark} />
+              ))}
+          </VStack>
+      </Box>
     </Flex>
   );
 };
