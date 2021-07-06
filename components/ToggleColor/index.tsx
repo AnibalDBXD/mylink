@@ -6,9 +6,12 @@ const ToggleColor = (): JSX.Element => {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
         <IconButton
-            aria-label={`Change ${colorMode} mode`}
-            icon={colorMode === "light" ? <SunIcon /> : <MoonIcon />}
-            onClick={toggleColorMode}
+          aria-label={`Change ${colorMode} mode`}
+          icon={colorMode === "light" ? <SunIcon /> : <MoonIcon />}
+          onClick={toggleColorMode}
+          position="fixed"
+          right="10"
+          top="10"
         />
     );
 };
