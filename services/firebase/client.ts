@@ -31,4 +31,19 @@ export const loginWithGithub = (): void => {
     firebase.auth().signInWithPopup(githubProvider);
 };
 
+export const loginWithGoogle = (): void => {
+    const googleProvider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(googleProvider);
+};
+
+export const loginWithFacebook = (): void => {
+    const facebookProvider = new firebase.auth.FacebookAuthProvider();
+    firebase.auth().signInWithPopup(facebookProvider);
+};
+
+export const loginWithTwitter = (): void => {
+    const twitter = new firebase.auth.TwitterAuthProvider();
+    firebase.auth().signInWithPopup(twitter);
+};
+
 export const signOut = (): Promise<void> => firebase.auth().signOut();

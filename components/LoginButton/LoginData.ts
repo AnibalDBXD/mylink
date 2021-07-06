@@ -4,7 +4,12 @@ import FacebookIcon from "../../public/icons/facebook.svg";
 import GoogleIcon from "../../public/icons/google.svg";
 import TwitterIcon from "../../public/icons/twitter.svg";
 
-import { loginWithGithub } from "../../services/firebase/client";
+import {
+    loginWithGithub,
+    loginWithFacebook,
+    loginWithGoogle,
+    loginWithTwitter
+} from "../../services/firebase/client";
 
 const LoginButtons: ILoginButton[] = [
     {
@@ -15,17 +20,17 @@ const LoginButtons: ILoginButton[] = [
     },
     {
         icon: FacebookIcon,
-        handleLogin: (): null => null,
+        handleLogin: loginWithFacebook,
         id: 2
     },
     {
         icon: GoogleIcon,
-        handleLogin: (): null => null,
+        handleLogin: loginWithGoogle,
         id: 3
     },
     {
         icon: TwitterIcon,
-        handleLogin: (): null => null,
+        handleLogin: loginWithTwitter,
         id: 4
     },
 ];
