@@ -24,6 +24,8 @@
     "rules": {
         "semi": "error",
         "react/jsx-sort-props": 2,
+        "react/jsx-indent-props": ["warn", 2],
+        "react/jsx-max-props-per-line": ["error", { "maximum": 1 }],
         "no-console": 2,
         "@typescript-eslint/explicit-module-boundary-types": ["error"],
         "@typescript-eslint/no-explicit-any": ["error"],
