@@ -22,6 +22,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "indent": ["error", 2],
         "semi": "error",
         "react/jsx-sort-props": 2,
         "react/jsx-indent-props": ["warn", 2],

@@ -9,7 +9,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
     <ChakraProvider>
       <UserProvider>
         <ToggleColor />
-          <Component {...pageProps} />
+        <Component {...pageProps} />
       </UserProvider>
     </ChakraProvider>
   );
