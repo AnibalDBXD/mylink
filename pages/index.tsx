@@ -4,9 +4,9 @@ import LoginButton, { LoginData } from "../components/LoginButton";
 
 const Home = (): JSX.Element => (
   <Flex alignItems="center"
-      flexDirection="column"
-      height="100vh"
-      padding="8">
+    flexDirection="column"
+    height="100vh"
+    padding="8">
       <Heading>
         Welcome to MyLink
       </Heading>
@@ -18,11 +18,11 @@ const Home = (): JSX.Element => (
         <VStack
           gridGap="1.2rem"
           marginTop="2.5rem">
-        {LoginData.map(({ handleLogin, icon, onDark, id }) => (
+        {LoginData.map(({ handleLogin, icon, id }) => (
           <LoginButton handleLogin={handleLogin}
             icon={icon}
             key={id}
-            onDark={onDark} />
+         />
               ))}
           </VStack>
       </Box>
