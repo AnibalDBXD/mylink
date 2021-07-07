@@ -1,12 +1,15 @@
 import React from "react";
 import { Box, Flex, Heading, VStack, Text } from '@chakra-ui/react';
 import LoginButton, { LoginData } from "../components/LoginButton";
+import HBB from "../components/HBB";
 
 const Home = (): JSX.Element => (
   <Flex alignItems="center"
     flexDirection="column"
     height="100vh"
-    padding="8">
+    padding="8"
+    textAlign="center">
+      <HBB />
       <Heading>
         Welcome to MyLink
       </Heading>

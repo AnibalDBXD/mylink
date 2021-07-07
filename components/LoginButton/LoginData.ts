@@ -13,9 +13,9 @@ import {
 
 const LoginButtons: ILoginButton[] = [
     {
-        icon: GithubIcon,
-        handleLogin: loginWithGithub,
-        id: 1
+        icon: TwitterIcon,
+        handleLogin: loginWithTwitter,
+        id: 4
     },
     {
         icon: FacebookIcon,
@@ -23,14 +23,14 @@ const LoginButtons: ILoginButton[] = [
         id: 2
     },
     {
+        icon: GithubIcon,
+        handleLogin: loginWithGithub,
+        id: 1
+    },
+    {
         icon: GoogleIcon,
         handleLogin: loginWithGoogle,
         id: 3
-    },
-    {
-        icon: TwitterIcon,
-        handleLogin: loginWithTwitter,
-        id: 4
     },
 ];
 
