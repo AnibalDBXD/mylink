@@ -14,7 +14,6 @@ import {
 const LoginButtons: ILoginButton[] = [
     {
         icon: GithubIcon,
-        onDark: true,
         handleLogin: loginWithGithub,
         id: 1
     },
