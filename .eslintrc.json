@@ -7,7 +7,8 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "next"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -22,6 +23,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "no-fallthrough": false,
         "indent": ["error", 2],
         "semi": "error",
         "react/jsx-sort-props": 2,
