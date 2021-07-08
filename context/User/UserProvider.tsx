@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect, useReducer } from "react";
-import { onAuthStateChanged } from "../../services/firebase/client";
+import { onAuthStateChanged } from "../../services/firebase/auth";
 import { IUser } from "../../services/firebase/types";
 import UserActions from "./userActions";
 import { initialState, userContext } from "./userContext";

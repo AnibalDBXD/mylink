@@ -9,7 +9,7 @@ import {
   loginWithFacebook,
   loginWithGoogle,
   loginWithTwitter
-} from "../../services/firebase/client";
+} from "../../services/firebase/auth";
 
 const LoginButtons: ILoginButton[] = [
   {
