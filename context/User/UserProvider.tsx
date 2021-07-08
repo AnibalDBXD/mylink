@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useReducer } from "react";
+import React, { ReactNode, useEffect, useReducer } from "react";
 import { onAuthStateChanged } from "../../services/firebase/client";
 import { IUser } from "../../services/firebase/types";
 import UserActions from "./userActions";
@@ -26,8 +26,8 @@ const UserProvider = ({ children }: IProps): JSX.Element => {
       setUser,
       //on error
       (errorMessage: string) => alert(errorMessage)
-    )
-  }, [])
+    );
+  }, []);
 
   return (
     <userContext.Provider
